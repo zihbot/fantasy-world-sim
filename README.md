@@ -1,1 +1,3 @@
-# fantasy-world-sim
+# Fantasy World Simulator
+
+Nothing to see yet
