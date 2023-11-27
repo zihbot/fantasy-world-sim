@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://ckwf4htspp1us"]
+[gd_scene load_steps=2 format=3 uid="uid://ckwf4htspp1us"]
+
+[ext_resource type="Script" path="res://scenes/macro/MacroMap.cs" id="1_4k1jq"]
 
 [node name="MacroMap" type="Control"]
 layout_mode = 3
@@ -7,9 +9,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4k1jq")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Hello"
+[node name="Map" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.999132, 1)
