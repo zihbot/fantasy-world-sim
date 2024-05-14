@@ -8,8 +8,8 @@ public partial class Main : Control
 	{
 		if (OS.IsDebugBuild())
 		{
-			var macroMap = ResourceLoader.Load<PackedScene>("res://scenes/macro/MacroMap.tscn");
-			AddChild(macroMap.Instantiate());
+			var townView = ResourceLoader.Load<PackedScene>(Resources.ViewTownPath);
+			AddChild(townView.Instantiate());
 		}
 	}
 
