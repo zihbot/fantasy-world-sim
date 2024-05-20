@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbtvm246kfk8k"]
+[gd_scene load_steps=3 format=3 uid="uid://bbtvm246kfk8k"]
 
 [ext_resource type="Script" path="res://scenes/view/town/TerrainMesh.cs" id="1_nmk7c"]
+[ext_resource type="Script" path="res://scenes/view/town/CameraMovement.cs" id="2_kld88"]
 
 [node name="TownView" type="Node3D"]
 
@@ -8,7 +9,8 @@
 script = ExtResource("1_nmk7c")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.747532, 0.664226, 0, -0.664226, 0.747532, -0.07858, 1.09533, 1.43989)
+transform = Transform3D(1, 0, 0, 0, 0.572647, 0.819802, 0, -0.819802, 0.572647, 0.475516, 0.92396, 1.14583)
+script = ExtResource("2_kld88")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -0.484932, 0.874552, 0, -0.874552, -0.484932, 0, 1.46546, 0)
